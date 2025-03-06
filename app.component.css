@@ -1,0 +1,28 @@
+/* Button Styles */
+.btn-primary, .btn-secondary {
+    padding: 0.5rem 1rem;
+    border-radius: 4px;
+    border: none;
+    cursor: pointer;
+    font-size: 0.875rem;
+    font-weight: 500;
+    transition: all 0.2s;
+}
+
+.btn-primary {
+    background: #4F46E5;
+    color: white;
+}
+
+.btn-primary:hover {
+    background: #4338CA;
+}
+
+.btn-secondary {
+    background: #F3F4F6;
+    color: #374151;
+}
+
+.btn-secondary:hover {
+    background: #E5E7EB;
+}

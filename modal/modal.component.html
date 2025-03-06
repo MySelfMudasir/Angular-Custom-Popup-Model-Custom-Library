@@ -1,0 +1,24 @@
+<div class="modal show" [ngClass]="[options.size, options.position]" #modalDiv>
+    <div *ngIf="options.backdrop" class="modal-backdrop modal-backdrop-black" (click)="backdropClick($event)"></div>
+
+    <div class="modal-content">
+        <div class="modal-header">
+            <h2>{{ options.title }}</h2>
+            <button *ngIf="options.showCloseButton" class="modal-close" (click)="closeModal()">
+                &times;
+            </button>
+        </div>
+
+        <div class="modal-body" [class.scrollable]="options.scrollable">
+            <p>This is a premium modal with customizable options. You can easily modify its behavior and appearance
+                using simple class names.</p>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et
+                dolore magna aliqua.</p>
+        </div>
+
+        <div class="modal-footer">
+            <button class="btn-secondary" (click)="closeModal()">Cancel</button>
+            <button class="btn-primary">OK</button>
+        </div>
+    </div>
+</div>

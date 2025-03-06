@@ -1,0 +1,10 @@
+
+<button (click)="openModal()" class="btn-primary">Open Modal</button>
+
+<app-modal
+  *ngIf="showModal"
+  [options]="modalOptions"
+  (close)="closeModal()"
+></app-modal>
+
+
